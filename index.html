@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM manipulation</title>
  <style>
-    
+    body{
+        background-color: #F4F1DE;
+    }
     table {
         width: 100%;
         }
@@ -40,18 +42,26 @@
         height: 30%;
     }
 
+    #message-form{
+        margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+    }
+
  </style>
 
   
 </head>
-<body>
-    
+<body id="changing-background-color" >
+    <button id="background"style="background-color: #DDE5B6">Backgroundcolor</button>
      
     
     <h1 id="changingH1">
     Media World smartphone shop
     </h1>
-    <button id="textChanger"> change H1</button>
+    <button id="textChanger" style="background:blue"> CHANGE H1</button>
+    <button id="clickToanchorTags" > Addingstyle to anchor tag</button>
 
 <!-- table of content -->
 <table id=" whole-table">
@@ -65,7 +75,7 @@
   <tr>
     <td><img class="Image" src=https://m.media-amazon.com/images/I/61XO4bORHUL._AC_SX679_.jpg alt= Phone image /></td>
     <td ><h3> I phone 14</h3></td>
-    <td width = 200px>description:
+    <td width = 200px>DESCRIPTION:
         <p>Display	Super Retina XDR display with 6.1 ProMotion
         <br>
         Camera	48MP Pro Camera System (Ultra Wide, Wide, Telephoto)
@@ -75,13 +85,13 @@
         Battery and power supply	Compatible with MagSafe accessories and Qi wireless chargers
         </td>
     <td >999 Euros</td>
-    <td ><a href="https://www.amazon.it/Apple-iPhone-14-Pro-128/dp/B0BDKJKGSN/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=G3Q29G4L6RWJ&keywords=iphone+14&qid=1665404200&qu=eyJxc2MiOiI0LjE0IiwicXNhIjoiMy43NSIsInFzcCI6IjMuMjAifQ%3D%3D&sprefix=i+phone+1%2Caps%2C674&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFWWlROSUtUNkhGUkImZW5jcnlwdGVkSWQ9QTEwMTc2ODcyOUlNTDNUMU0zUzlaJmVuY3J5cHRlZEFkSWQ9QTA4MjQ5NjEyTk5XSUgxQUkxOVcwJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ"> Iphone 14 link</a>  </td>
+    <td ><a class= "amazonLink" href="https://www.amazon.it/Apple-iPhone-14-Pro-128/dp/B0BDKJKGSN/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=G3Q29G4L6RWJ&keywords=iphone+14&qid=1665404200&qu=eyJxc2MiOiI0LjE0IiwicXNhIjoiMy43NSIsInFzcCI6IjMuMjAifQ%3D%3D&sprefix=i+phone+1%2Caps%2C674&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFWWlROSUtUNkhGUkImZW5jcnlwdGVkSWQ9QTEwMTc2ODcyOUlNTDNUMU0zUzlaJmVuY3J5cHRlZEFkSWQ9QTA4MjQ5NjEyTk5XSUgxQUkxOVcwJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ"> Buy now</a>  </td>
     
   </tr>
   <tr>
     <td><img class="Image" src=https://www.backmarket.it/cdn-cgi/image/format=auto,quality=75,width=640/https://d1eh9yux7w8iql.cloudfront.net/product_images/461608_ad6caa26-df9a-4f70-95c9-8d3669bbe7dc.jpg alt= Phone image /></td>
     <td ><h3>Galaxy Note20 5G</h3></td>
-    <td width = 200px>description:
+    <td width = 200px>DESCRIPTION:
         <p>Manufacturer: Samsung
         <br>
         Memory data storage capacity	12 GB
@@ -92,13 +102,13 @@
         Batteries: 1 Lithium Polymer batteries required. (included)
         </td>
     <td >1,392 Euros</td>
-    <td ><a href="https://www.amazon.it/Smartphone-Fotocamere-Espandibili-Batteria-Versione/dp/B08DRSWV9X/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3VTDXHC3KUAZ0&keywords=Galaxy%2BNote20%2B5G&qid=1665407209&qu=eyJxc2MiOiIzLjE5IiwicXNhIjoiMi4zMiIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=galaxy%2Bnote20%2B5g%2Caps%2C308&sr=8-1&th=1"> Galaxy Note20 5G</a>  </td>
+    <td ><a class= "amazonLink" href="https://www.amazon.it/Smartphone-Fotocamere-Espandibili-Batteria-Versione/dp/B08DRSWV9X/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3VTDXHC3KUAZ0&keywords=Galaxy%2BNote20%2B5G&qid=1665407209&qu=eyJxc2MiOiIzLjE5IiwicXNhIjoiMi4zMiIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=galaxy%2Bnote20%2B5g%2Caps%2C308&sr=8-1&th=1"> Buy now</a>  </td>
 
   </tr>
   <tr>
     <td><img class="Image" src=https://m.media-amazon.com/images/I/81fkbOe-u-L.__AC_SX300_SY300_QL70_ML2_.jpg alt= Phone image /></td>
     <td ><h3>OnePlus 10 Pro 5G </h3></td>
-    <td width = 200px>description:
+    <td width = 200px>DESCRIPTION:
         <p>Display technology	AMOLED	AMOLED	OLED	OLED
             Item size	7.39 x 0.85 x 16.3 cm
         <br>
@@ -109,7 +119,7 @@
         Lithium battery energy content	5 Watt hours
         </td>
     <td >999 Euros</td>
-    <td ><a href="https://www.amazon.it/OnePlus-Smartphone-Fotocamera-Hasselblad-generazione/dp/B09SGN4BZ3/ref=sr_1_1_mod_primary_new?crid=1E5BV4T5UB435&keywords=one%2Bplus10pro&qid=1665407741&qu=eyJxc2MiOiIzLjEwIiwicXNhIjoiMi40NyIsInFzcCI6IjEuMTYifQ%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=one%2Bplus%2Caps%2C360&sr=8-1&th=1"> OnePlus 10 Pro 5G </a>  </td>
+    <td ><a class= "amazonLink" href="https://www.amazon.it/OnePlus-Smartphone-Fotocamera-Hasselblad-generazione/dp/B09SGN4BZ3/ref=sr_1_1_mod_primary_new?crid=1E5BV4T5UB435&keywords=one%2Bplus10pro&qid=1665407741&qu=eyJxc2MiOiIzLjEwIiwicXNhIjoiMi40NyIsInFzcCI6IjEuMTYifQ%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=one%2Bplus%2Caps%2C360&sr=8-1&th=1"> Buy now </a>  </td>
 
   </tr>
   <tr>
@@ -125,13 +135,13 @@
         Battery and power supply	Compatible with MagSafe accessories and Qi wireless chargers
         </td>
     <td >1048 Euros</td>
-    <td ><a href="https://www.amazon.it/Novit%C3%A0-Apple-iPhone-Pro-256GB/dp/B08L5PXYPP/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=NZ9MWGSKSCOD&keywords=i+phone13pro&qid=1665408333&qu=eyJxc2MiOiIyLjcwIiwicXNhIjoiMi4xNCIsInFzcCI6IjEuNzcifQ%3D%3D&sprefix=i+phone13pro%2Caps%2C269&sr=8-2"> Iphone 13 pro</a>  </td>
+    <td ><a  class= "amazonLink"href="https://www.amazon.it/Novit%C3%A0-Apple-iPhone-Pro-256GB/dp/B08L5PXYPP/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=NZ9MWGSKSCOD&keywords=i+phone13pro&qid=1665408333&qu=eyJxc2MiOiIyLjcwIiwicXNhIjoiMi4xNCIsInFzcCI6IjEuNzcifQ%3D%3D&sprefix=i+phone13pro%2Caps%2C269&sr=8-2">Buy now</a>  </td>
 
   </tr>
   <tr>
     <td><img class="Image" src=https://m.media-amazon.com/images/I/61J7RTSXWmL._AC_SX679_.jpg alt= Phone  /></td>
     <td ><h3> SONY Sony Xperia 1 IV</h3></td>
-    <td width = 200px>description:
+    <td width = 200px>DESCRIPTION:
         <p>Operating system	Android
             Memory capacity	12 GBn
         <br>
@@ -143,7 +153,7 @@ Memory capacity	12 GB
 Size of installed flash memory	256 GB
         </td>
     <td >1507 Euros</td>
-    <td ><a href="https://www.amazon.it/Sony-Xperia-Purple-256GB-XQCT54C0V-EEAC/dp/B09ZPMSZ8F/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=49T2LE23QC8F&keywords=Sony+Xperia+1&qid=1665408587&qu=eyJxc2MiOiI0LjY4IiwicXNhIjoiMy41MCIsInFzcCI6IjEuNDYifQ%3D%3D&sprefix=sony+xperia+1%2Caps%2C280&sr=8-2"> SONY Sony Xperia 1 IV</a>  </td>
+    <td ><a class= "amazonLink" href="https://www.amazon.it/Sony-Xperia-Purple-256GB-XQCT54C0V-EEAC/dp/B09ZPMSZ8F/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=49T2LE23QC8F&keywords=Sony+Xperia+1&qid=1665408587&qu=eyJxc2MiOiI0LjY4IiwicXNhIjoiMy41MCIsInFzcCI6IjEuNDYifQ%3D%3D&sprefix=sony+xperia+1%2Caps%2C280&sr=8-2"> Buy now</a>  </td>
 
   </tr>
 </table>
@@ -151,7 +161,7 @@ Size of installed flash memory	256 GB
 <br>
 <!-- address -->
 <footer>
-    <div id=" footer">
+    <div id="footer">
          ADDRESS:
         <p> via alessandro prosdocimi,36
             <br>
@@ -160,15 +170,18 @@ Size of installed flash memory	256 GB
             <br>
         mobile number: 3319679544.
         </p>
+        <button id="fakeaddress"> newaddress</button>
     </div>
 <!-- ?message board -->
+<div id="message-form">
 <p>
    <label for="from">Please type your message here:</label>
 <br />
-   <textarea name="message" id="message" style="height: 200px; width: 500px;"   
-     onclick="this.value=''">Enter text here...</textarea>
-</p>    
 
+   <textarea name="message" id="message" style="height: 200px; width: 500px;"   
+     onclick="this.value=''">Please write your message here...</textarea>
+</p>    
+</div>
 </footer>
 <script src="./index.js"> </script>
 
